@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import { memo } from "react";
+
 import { AppContextValueSchema, useAppContext } from "../context/state";
 
 const Header: NextPage = () => {
@@ -12,4 +14,4 @@ const Header: NextPage = () => {
   );
 };
 
-export default Header;
+export default memo(Header);
