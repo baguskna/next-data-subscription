@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import { memo } from "react";
+
 import { AppContextValueSchema, useAppContext } from "../context/state";
 
 const Footer: NextPage = () => {
@@ -7,4 +9,4 @@ const Footer: NextPage = () => {
   return <div>Footer {counter}</div>;
 };
 
-export default Footer;
+export default memo(Footer);

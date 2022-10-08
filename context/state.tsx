@@ -27,6 +27,6 @@ export function AppWrapper({ children }: AppWrapperProps) {
   );
 }
 
-export function useAppContext() {
+export function useAppContext(): AppContextValueSchema | undefined {
   return useContext(AppContext);
 }
